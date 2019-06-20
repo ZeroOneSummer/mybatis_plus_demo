@@ -1,0 +1,56 @@
+
+# datasource-h2
+spring:
+    datasource:
+        driver-class-name: org.h2.Driver
+#        schema: classpath:db/table-h2.sql
+#        data: classpath:db/data-h2.sql
+        url: jdbc:h2:~/test;AUTO_SERVER=TRUE        # ~代表用户根目录，自动混合模式（允许多个客户端访问）
+        username: admin
+        password: admin
+    h2:
+        console:
+            path: /h2               # http://localhost:8080/h2 访问DB管理界面
+            enabled: true
+
+# datasource-oracle
+#spring:
+#    datasource:
+#        driver-class-name: oracle.jdbc.driver.OracleDriver
+#        url: jdbc:oracle:thin:@127.0.0.1:1521/ORCL
+#        username: system
+#        password: system
+
+# Logger
+logging:
+    level:
+        com.neo: debug
+
+# mybatis-plus
+mybatis-plus:
+    mapper-locations: classpath:/mapper/*.xml
+    typeAliasesPackage: com.dimai.mybatis_plus_demo.entity
+    global-config:
+        #主键类型  0:"数据库ID自增", 1:"用户输入ID",2:"全局唯一ID (数字类型唯一ID)", 3:"全局唯一ID UUID";
+        id-type: 0
+        #字段策略 0:"忽略判断",1:"非 NULL 判断"),2:"非空判断"
+        field-strategy: 2
+        #驼峰下划线转换
+        db-column-underline: true
+        #刷新mapper 调试神器
+        refresh-mapper: true
+        #数据库大写下划线转换
+        capital-mode: true
+        #序列接口实现类配置
+        #key-generator: com.baomidou.springboot.xxx
+        #逻辑删除配置
+        logic-delete-value: 0
+        logic-not-delete-value: 1
+        #自定义填充策略接口实现
+        #meta-object-handler: com.baomidou.springboot.MyMetaObjectHandler
+        #自定义SQL注入器
+        #sql-injector: com.baomidou.springboot.xxx
+    configuration:
+        map-underscore-to-camel-case: true
+        cache-enabled: false
+
