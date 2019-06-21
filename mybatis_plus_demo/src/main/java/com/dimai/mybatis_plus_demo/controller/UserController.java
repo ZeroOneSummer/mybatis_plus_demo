@@ -2,7 +2,6 @@ package com.dimai.mybatis_plus_demo.controller;
 
 
 import org.springframework.web.bind.annotation.RequestMapping;
-
 import org.springframework.web.bind.annotation.RestController;
 
 /**

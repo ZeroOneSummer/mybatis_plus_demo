@@ -1,7 +1,7 @@
 package com.dimai.mybatis_plus_demo.mapper;
 
-import com.dimai.mybatis_plus_demo.entity.User;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.dimai.mybatis_plus_demo.entity.User;
 
 /**
  * <p>
@@ -12,5 +12,6 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @since 2019-06-20
  */
 public interface UserMapper extends BaseMapper<User> {
+
     User queryLast();
 }

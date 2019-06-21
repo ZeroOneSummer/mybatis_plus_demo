@@ -21,10 +21,10 @@ spring:
 #        username: system
 #        password: system
 
-# Logger
+# 打印sql
 logging:
     level:
-        com.neo: debug
+        com.dimai.mybatis_plus_demo: debug
 
 # mybatis-plus
 mybatis-plus:
