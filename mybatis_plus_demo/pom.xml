@@ -85,6 +85,17 @@
             <artifactId>ojdbc6</artifactId>
             <version>11.1.0.6.0</version>
         </dependency>-->
+
+        <!-- mail -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-mail</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.mail</groupId>
+            <artifactId>javax.mail</artifactId>
+            <version>RELEASE</version>
+        </dependency>
     </dependencies>
 
     <build>

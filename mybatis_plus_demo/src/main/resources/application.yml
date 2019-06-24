@@ -12,6 +12,11 @@ spring:
         console:
             path: /h2               # http://localhost:8080/h2 访问DB管理界面
             enabled: true
+    mail:
+        host: smtp.qq.com
+        username: 发送方邮箱
+        password: 邮件服务器授权码
+        default-encoding: UTF-8
 
 # datasource-oracle
 #spring:
@@ -53,4 +58,3 @@ mybatis-plus:
     configuration:
         map-underscore-to-camel-case: true
         cache-enabled: false
-

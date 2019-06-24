@@ -21,9 +21,7 @@ import java.util.Map;
  * Created by pijiang on 2019/6/20.
  */
 @Slf4j
-@SpringBootTest
-@RunWith(SpringRunner.class)
-public class InterfaceTest {
+public class InterfaceTest extends BaseTest{
 
     @Autowired
     private UserMapper userMapper;
