@@ -58,3 +58,5 @@ mybatis-plus:
     configuration:
         map-underscore-to-camel-case: true
         cache-enabled: false
+
+my.name: 布鲁斯_李

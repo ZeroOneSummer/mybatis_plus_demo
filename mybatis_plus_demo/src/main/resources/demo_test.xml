@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="xml.test.User" class="com.dimai.mybatis_plus_demo.entity.User">
+        <property name="id" value="1001"/>
+        <property name="name" value="test_xml_2019"/>
+        <property name="age" value="100"/>
+        <property name="email" value="xxx@qq.com"/>
+    </bean>
+
+</beans>
