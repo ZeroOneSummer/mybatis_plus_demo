@@ -45,4 +45,15 @@ public class XmlBeanPropertieTest extends BaseTest {
         System.out.println(property);
     }
 
+    @Test
+    public void createProxy() throws Exception{
+        //接口转换
+        Class<User.Iface> ifaceClass = User.Iface.class;
+        String interfaceClassName = ifaceClass.getName();
+        String clientClassName = interfaceClassName.replace("$Iface", "$Client");
+        Class<?> clientClass = Class.forName(clientClassName);
+
+        System.out.println(clientClass);
+    }
+
 }
