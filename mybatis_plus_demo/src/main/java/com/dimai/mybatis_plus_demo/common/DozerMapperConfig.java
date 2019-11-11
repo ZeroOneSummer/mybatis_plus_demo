@@ -28,8 +28,7 @@ public class DozerMapperConfig {
             protected void configure() {
                 // 个性化配置添加在此
                 mapping(SourceBean.class, TargetBean.class)
-                        .fields("data2", "binaryData2")  //同在源对象加注解@Mapping("binaryData")类似：不同名、不同类型
-                        .fields("typeCode", "typeName");  //同在源对象加注解@Mapping("binaryData")类似：不同名、不同类型
+                        .fields("data2", "binaryData2");  //同在源对象加注解@Mapping("binaryData")类似：不同名、不同类型
             }
         };
     }

@@ -9,7 +9,7 @@ import org.springframework.context.event.ContextRefreshedEvent;
 
 @Slf4j
 @SpringBootApplication
-@MapperScan(basePackages = "com.dimai.mybatis_plus_demo.mapper")
+@MapperScan(basePackages = {"com.dimai.mybatis_plus_demo.mapper", "com.dimai.mybatis_plus_demo.mybatis.biz"})
 public class WebApp implements ApplicationListener<ContextRefreshedEvent> {
 
     public static void main(String[] args) {
