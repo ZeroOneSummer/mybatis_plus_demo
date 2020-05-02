@@ -12,6 +12,6 @@ import com.dimai.mybatis_plus_demo.entity.User;
  * @since 2019-06-20
  */
 public interface UserMapper extends BaseMapper<User> {
-
     User queryLast();
+    User queryUserById(User user);
 }
