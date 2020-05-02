@@ -39,7 +39,7 @@ public class CodeGeneratorUtil {
                       .setRestControllerStyle(true)
                 //    .setTablePrefix(new String[]{"TEST_"})
                 //    .setExclude(new String[]{"test"})
-                      .setInclude(new String[] {"USER"});   //表面必须大写
+                      .setInclude(new String[] {"USER"});   //表名必须大写
 
         // 包配置
         PackageConfig packageConfig = new PackageConfig();
